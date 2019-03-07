@@ -1,0 +1,37 @@
+
+body {
+    background-color: wheat;
+}
+
+#train-table th, td {
+    display: inline-block;
+    width: 20%;
+}
+
+.jumbotron {
+    background-image: linear-gradient(to bottom right, darkblue, lightblue);
+    color: yellow;
+    text-shadow: 2px 2px 8px orangered;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h3 {font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.card-header {
+    background-image: linear-gradient(to bottom right, darkblue, lightblue);
+    color: yellow;;
+    font-size: 1.5em;
+}
+
+th {
+    font-weight: bold;
+}
+
