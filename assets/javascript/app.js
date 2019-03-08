@@ -84,19 +84,18 @@ database.ref().on("child_added", function (snapshot) {
   console.log(moment);
   console.log(moment(trainT, "HH:mm"));
   console.log("trainT is ", trainT);
-  // console.log("substract time is ", moment(trainT, "HH:mm").subtract(1, "hour").format('HH:mm'));
 
-  var firstTimeConverted = moment(trainT, "HH:mm").subtract(1, "years");
+  var firstTimeConverted = moment($("#first-train-input"), "HH:mm").format("X");
 
-  console.log(firstTimeConverted + "User Train Time Input");
+  console.log(" User Train Time Input " + firstTimeConverted);
 
   // Current Time
-  var currentTime = moment();
-  console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"));
+  var currentTime = moment().format("X");
+  console.log("CURRENT TIME: " + currentTime);
 
   // Difference between current time and the first train time
-  
-  var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+
+  var diffTime = moment().diff(moment(firstTimeConverted, 'minuttes'));
   console.log("DIFFERENCE IN TIME: " + diffTime);
 
   // Time apart (remainder)
